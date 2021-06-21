@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="X[62] <= -0.394\ngini = 0.822\nsamples = 39943\nvalue = [1124, 88, 462, 1069, 445, 158, 1815, 11394, 15, 112\n7662, 2275, 278, 2910, 8557, 1579]\nclass = Rock", fillcolor="#edfcfd"] ;
+1 [label="X[132] <= -0.065\ngini = 0.668\nsamples = 14220\nvalue = [403, 26, 109, 174, 349, 79, 633, 7646, 2, 19, 1103\n346, 46, 547, 2492, 246]\nclass = Rock", fillcolor="#a8f1f4"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="X[60] <= -0.263\ngini = 0.53\nsamples = 10106\nvalue = [136, 18, 50, 52, 263, 52, 362, 6738, 1, 10, 517\n189, 18, 138, 1407, 155]\nclass = Rock", fillcolor="#86ebef"] ;
+1 -> 2 ;
+3 [label="gini = 0.794\nsamples = 972\nvalue = [20, 11, 7, 45, 258, 2, 29, 169, 1, 0, 53, 37\n10, 10, 303, 17]\nclass = Experimental", fillcolor="#fdf3f6"] ;
+2 -> 3 ;
+4 [label="gini = 0.463\nsamples = 9134\nvalue = [116, 7, 43, 7, 5, 50, 333, 6569, 0, 10, 464, 152\n8, 128, 1104, 138]\nclass = Rock", fillcolor="#78e9ed"] ;
+2 -> 4 ;
+5 [label="X[65] <= -0.153\ngini = 0.839\nsamples = 4114\nvalue = [267, 8, 59, 122, 86, 27, 271, 908, 1, 9, 586\n157, 28, 409, 1085, 91]\nclass = Experimental", fillcolor="#fef4f7"] ;
+1 -> 5 ;
+6 [label="gini = 0.822\nsamples = 2159\nvalue = [193, 4, 34, 112, 85, 7, 163, 301, 1, 0, 232, 98\n24, 81, 762, 62]\nclass = Experimental", fillcolor="#f9cedc"] ;
+5 -> 6 ;
+7 [label="gini = 0.809\nsamples = 1955\nvalue = [74, 4, 25, 10, 1, 20, 108, 607, 0, 9, 354, 59\n4, 328, 323, 29]\nclass = Rock", fillcolor="#e0fafb"] ;
+5 -> 7 ;
+8 [label="X[20] <= 0.171\ngini = 0.837\nsamples = 25723\nvalue = [721, 62, 353, 895, 96, 79, 1182, 3748, 13, 93\n6559, 1929, 232, 2363, 6065, 1333]\nclass = Electronic", fillcolor="#fbfafe"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="X[43] <= -0.426\ngini = 0.84\nsamples = 12899\nvalue = [360, 45, 236, 868, 96, 36, 607, 1896, 5, 18, 1852\n1325, 166, 451, 3886, 1052]\nclass = Experimental", fillcolor="#fadbe5"] ;
+8 -> 9 ;
+10 [label="gini = 0.801\nsamples = 5645\nvalue = [85, 15, 93, 772, 91, 4, 204, 538, 1, 3, 645, 353\n68, 74, 2127, 572]\nclass = Experimental", fillcolor="#f8c8d8"] ;
+9 -> 10 ;
+11 [label="gini = 0.848\nsamples = 7254\nvalue = [275, 30, 143, 96, 5, 32, 403, 1358, 4, 15, 1207\n972, 98, 377, 1759, 480]\nclass = Experimental", fillcolor="#fdf2f5"] ;
+9 -> 11 ;
+12 [label="X[79] <= 0.391\ngini = 0.788\nsamples = 12824\nvalue = [361, 17, 117, 27, 0, 43, 575, 1852, 8, 75, 4707\n604, 66, 1912, 2179, 281]\nclass = Electronic", fillcolor="#d7d0f9"] ;
+8 -> 12 ;
+13 [label="gini = 0.838\nsamples = 6591\nvalue = [220, 15, 86, 19, 0, 36, 383, 1316, 3, 52, 1580\n527, 50, 944, 1191, 169]\nclass = Electronic", fillcolor="#f7f5fe"] ;
+12 -> 13 ;
+14 [label="gini = 0.69\nsamples = 6233\nvalue = [141, 2, 31, 8, 0, 7, 192, 536, 5, 23, 3127, 77\n16, 968, 988, 112]\nclass = Electronic", fillcolor="#baaef4"] ;
+12 -> 14 ;
+}
